@@ -1,0 +1,8 @@
+hostname change-my-name
+exec-timeout 0 0
+logging buffered 51200 warnings
+service timestamps debug datetime msec
+no ip domain-lookup
+alias configure show do show
+alias interface show do show
+alias router show do show

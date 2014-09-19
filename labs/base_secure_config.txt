@@ -1,0 +1,102 @@
+! ---
+! Disabling Unnecessary Services
+! ---
+
+! Enable password encryption
+service password-encryption
+
+! Add user
+username noc secret 5 *jflfmo(jf33aq
+enable secret Kmme5bb$gsdq8
+
+! Disable unused services
+no ip domain-lookup
+no ip bootp server
+no ip source-route
+no service pad
+no ip http server
+no ip http secure-server
+no cdp run
+no service finger 
+no ip identd
+no service tcp-small-servers
+no service udp-small-servers
+
+! Disable CDP, MOP, IP Redirects on EXTERNAL facing interfaces
+interface <interface-type/number>
+ no cdp enable
+ no mop enabled
+ no ip redirects
+ no ip proxy-arp
+ no ip directed-broadcast
+
+! ---
+! SSH Configuration
+! ---
+
+! Prevent hung sessions in case of a remote system crash
+service tcp-keepalives-in
+!
+! Define local username for fallback access.
+username adminuser privilege 15 password <mypassword>
+!
+! AAA services
+!aaa authentication login <authen-exec-list> group <adminAAAgroup> local-case
+!aaa authentication enable default group tacacs-group enable
+!aaa authorization exec <author-exec-list> group tacacs-group if-authenticated
+!aaa accounting exec <account-exec-list>  start-stop group <adminAAAgroup>
+!
+ip access-list extended management-acl
+ remark management ACL for SSH
+ permit tcp <NOCsubnet1> <inverse-mask> any eq 22
+ permit tcp <NOCsubnet2> <inverse-mask> any eq 22 
+ access-list deny ip any any log-input
+!
+crypto key generate rsa
+! (after entering command, follow the series of prompts)
+!
+ip ssh version 2
+! SSH negotiation timeout of 30 seconds
+ip ssh timeout 30
+!
+! SSH authentication attempts of 2 before an interface reset
+ip ssh authentication-retries 2
+!
+line vty 0 4
+access-class management-acl in
+!
+! Incoming access via SSH only
+transport input ssh
+!
+!authorization exec <author-exec-list>
+!accounting exec <account-exec-list>
+!login authentication <authen-exec-list>
+!
+! No outgoing connections permitted
+transport output none
+!
+! Incoming access not permitted if the request does not specify the transport protocol 
+transport preferred none	
+!
+! Idle timeout of 3 minutes
+session-timeout 3
+!
+! EXEC timeout of 10 minutes
+exec-timeout 10 0
+!
+line con 0
+ exec-timeout 5 0
+ login authentication default
+
+! ---
+! Banner
+! ---
+! Present a legal notification banner approved by company legal counsel
+banner login #
+UNAUTHORIZED ACCESS TO THIS DEVICE IS PROHIBITED
+You must have explicit, authorized permission to access or configure this device.
+Unauthorized attempts and actions to access or use this system may result in civil and/or 
+criminal penalties.
+All activities performed on this device are logged and monitored.
+#
+!
