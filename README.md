@@ -8,10 +8,6 @@
 
 ## Вопросы
 
-### Часть 1. Построение защищенных сетей
-
-#### Теоретические вопросы
-
 1. Сетевые атаки
     * ARP spoofing
     * MAC spoofing
@@ -68,69 +64,30 @@
     * Конфигурация SSL/TLS
     * Атаки на SSL/TLS
     
-#### Лабораторные работы
+## Лабораторные работы
 
 1. Настройка Cisco IOS
-1. Защита инфраструктуры маршрутизации
-1. Защита инфраструктуры коммутации
-1. Построение отказоустойчивой ЛВС на базе протокола STP
-1. Защита ЛВС от атак канального уровня
-1. Построение маршрутизируемой ЛВС
-1. Защита сетевой инфраструктуры от НСД
-1. Защита периметра сети
-1. Криптографическая защита каналов передачи данных от несанкционированного доступа
-1. Защита беспроводной ЛВС
-
-### Часть 2. Анализ защищенности сетей
-
-#### Теоретические вопросы
-
-1. Методы сбора предварительной информации о сети
-1. Методы идентификации сетевых узлов
-1. Методы идентификации сетевых портов
-1. Методы идентификации маршрутов
-1. Методы идентификации сетевых протоколов
-1. Методы идентификации служб и приложений
-1. Методы идентификации операционных систем
-1. Методы идентификации уязвимостей
-1. Принципы работы сканеров безопасности
-
-#### Лабораторные работы
-
-1. Сбор предварительной информации о сети.
-1. Идентификация узлов и портов сетевых служб.
-1. Идентификация служб и приложений.
-1. Идентификация операционных систем.
-1. Идентификация уязвимостей сетевых приложений по косвенным признакам.
-1. Идентификация уязвимостей на основе тестов.
-1. Сканирование уязвимостей сетевой инфраструктуры Windows.
-1. Сканирование уязвимостей СУБД Oracle. 
-1. Сканирование уязвимостей веб-приложений.
-1. Сканирование уязвимостей корпоративной сети.
-
+2. Защита инфраструктуры маршрутизации
+3. Защита инфраструктуры коммутации
+4. Построение отказоустойчивой ЛВС на базе протокола STP
+5. Защита ЛВС от атак канального уровня
+6. Построение маршрутизируемой ЛВС
+7. Защита сетевой инфраструктуры от НСД
+8. Защита периметра сети
+9. Криптографическая защита каналов передачи данных от несанкционированного доступа
+10. Защита беспроводной ЛВС
 
 ## Задания
 1. Проанализировать и сравнить защищенность конфигураций SSL/TLS любых 10 популярных веб-ресурсов с помощью [сканера ssllabs.com](http://www.ssllabs.com)
 
 ## Материалы
 
-### Обязательные
+### Литература
 * [Sean Convery. Network Security Architectures](http://www.amazon.com/Network-Security-Architectures-Networking-Technology/dp/158714297X)
 * [Cisco Network Security Baseline](http://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Security/Baseline_Security/securebasebook.html)
 * [Ivan Ristić. Bulletproof SSL and TLS](https://www.feistyduck.com/books/bulletproof-ssl-and-tls/)
-* [Chris McNab. Network Security Assessment: Know Your Network](http://www.amazon.com/Network-Security-Assessment-Know-Your/dp/0596510306)
-* [А. Масалович. Конкурентная разведка в Интернет](http://www.youtube.com/watch?v=HcwASJCk16k)
 * [Eric Vyncke. LAN Switch Security: What Hackers Know About Your Switches](http://www.amazon.com/LAN-Switch-Security-Hackers-Switches/dp/1587052563)
-* [В. Дубровин. Ошибки использования безопасных протоколов и их эксплуатация](http://live.digitaloctober.ru/embed/2996#time1400752650)
-* С.В. Гордейчик, В.Б. Лепихин. Функциональные возможности сканеров безопасности
 
-### Рекомендуемые
-
-### Справочные
-* [Cisco SAFE eference Guide](http://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Security/SAFE_RG/SAFE_rg.html)
+### Справочная литература
+* [Cisco SAFE reference Guide](http://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Security/SAFE_RG/SAFE_rg.html)
 * [TCP/IP Illustrated. Volume 1: The Protocols (2nd Edition)](http://www.amazon.com/gp/product/0321336313/)
-
-### Дополнительно
-* [Offensive Security](http://www.cs.fsu.edu/~redwood/OffensiveSecurity/)
-* [Security Related Interview Questions for all Engineers](https://www.netmeister.org/blog/security-questions.html)
-* [Application security related questions for developers](https://teamquiz.aspectsecurity.com)
