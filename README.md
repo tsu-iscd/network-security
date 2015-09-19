@@ -104,6 +104,7 @@
       * https://example.com
       * https://auth.example.com
       * http://blog.example.com
+
 Реализовать атаку, позволяющую обойти механизм защиты от атак CSRF приложения https://example.com.
 
 ## Материалы
