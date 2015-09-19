@@ -118,6 +118,6 @@
 ### Справочная литература
 * [Cisco SAFE reference Guide](http://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Security/SAFE_RG/SAFE_rg.html)
 * [TCP/IP Illustrated. Volume 1: The Protocols (2nd Edition)](http://www.amazon.com/gp/product/0321336313/)
-* 
+
 ### Курсы
 * [Спецкурсы лаборатории безопасности информационных систем ВМК МГУ](http://course.secsem.ru/lections)
