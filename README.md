@@ -100,12 +100,12 @@
 7. На основе фрэймворка GNS3 выполнить [настройку механизмов защиты маршрутизатора от несанкционированного доступа] (http://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Security/Baseline_Security/securebasebook/sec_chap2.html). 
 8. На любом языке программирования написать программу, обнаруживающую в сети атаку ARP Spoofing.
 9. Проанализировать [конфигурационный файл](config2.conf) и перечислить все способы получения конфигурации с устройства, настроенного в соответствии с этим файлом.
-10. Имеется веб-приложение, в котором защита от атак CSRF реализована методом [Double Submit Cookies](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet). Веб-приложение имеет следующие компоненты:
-      * https://example.com
+10. Имеется веб-приложение, в котором защита от атак CSRF реализована методом [Double Submit Cookies](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet). Реализовать атаку, позволяющую обойти механизм защиты от атак CSRF приложения https://example.com если известно, что другие компоненты веб-приложения доступны по адресам:
+      * https://test.example.com
+      * http://support.example.com
       * https://auth.example.com
       * http://blog.example.com
 
-Реализовать атаку, позволяющую обойти механизм защиты от атак CSRF приложения https://example.com.
 
 ## Материалы
 
