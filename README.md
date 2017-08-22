@@ -17,7 +17,7 @@
 
 ## Материалы
 
-### Литература
+### Книги
 * [Sean Convery. Network Security Architectures](http://www.amazon.com/Network-Security-Architectures-Networking-Technology/dp/158714297X)
 * [Cisco Network Security Baseline](http://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Security/Baseline_Security/securebasebook.html)
 * [Ivan Ristić. Bulletproof SSL and TLS](https://www.feistyduck.com/books/bulletproof-ssl-and-tls/)
@@ -29,3 +29,7 @@
 
 ### Курсы
 * [Спецкурсы лаборатории безопасности информационных систем ВМК МГУ](http://course.secsem.ru/lections)
+
+### Статьи
+* [Robert Graham. 10 years of Slammer: one retrospective](http://blog.erratasec.com/2013/01/10-years-of-slammer-one-retrospective.html)
+* [Robert Graham. NAT is a firewall](http://blog.erratasec.com/2017/01/nat-is-firewall.html)
