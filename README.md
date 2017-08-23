@@ -33,3 +33,4 @@
 ### Статьи
 * [Robert Graham. 10 years of Slammer: one retrospective](http://blog.erratasec.com/2013/01/10-years-of-slammer-one-retrospective.html)
 * [Robert Graham. NAT is a firewall](http://blog.erratasec.com/2017/01/nat-is-firewall.html)
+* [A Red Teamer's guide to pivoting](https://artkond.com/2017/03/23/pivoting-guide/)
